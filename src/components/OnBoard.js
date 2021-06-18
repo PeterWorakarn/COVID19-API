@@ -12,7 +12,8 @@ export default class OnBoard extends Component {
         doneLabel: "Done",
         exitOnOverlayClick: true,
         exitOnEsc: true,
-        scrollToElement: true
+        scrollToElement: true,
+        hidePrev:true
       },
       stepsEnabled: true,
       initialStep: 0,
@@ -20,7 +21,7 @@ export default class OnBoard extends Component {
         {
           element: ".onBoard-1",
           intro: "Welcome to Onboard session 🎉🎉 <br /> <br /> This session will guide you through all aspects of application",
-          tooltipClass: "font-normal body-font focus:outline-none focus-within:outline-none"
+          tooltipClass: "font-normal body-font focus:outline-none focus-within:outline-none",
         },
         {
           element: ".onBoard-2",
