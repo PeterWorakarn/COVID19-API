@@ -8,32 +8,44 @@ export default class OnBoard extends Component {
     super(props);
 
     this.state = {
+      options: {
+        doneLabel: "Done",
+        exitOnOverlayClick: true,
+        exitOnEsc: true,
+        scrollToElement: true
+      },
       stepsEnabled: true,
       initialStep: 0,
       steps: [
         {
           element: ".onBoard-1",
-          intro: "Hello Welcome to ..."
+          intro: "Welcome to Onboard session 🎉🎉 <br /> <br /> This session will guide you through all aspects of application",
+          tooltipClass: "font-normal body-font focus:outline-none focus-within:outline-none"
         },
         {
           element: ".onBoard-2",
-          intro: "Explore Global situation"
+          intro: "Explore global situation",
+          tooltipClass: "font-normal body-font focus:outline-none focus-within:outline-none"
         },
         {
           element: ".onBoard-3",
-          intro: "Explore each country situation"
+          intro: "Explore each country situation",
+          tooltipClass: "font-normal body-font focus:outline-none focus-within:outline-none"
         },
         {
           element: ".onBoard-4",
-          intro: "Filter by Click on the table's header"
+          intro: "Filter each data by click on the table's header",
+          tooltipClass: "font-normal body-font focus:outline-none focus-within:outline-none"
         },
         {
           element: ".onBoard-5",
-          intro: "Can't find country you looking for ? /n Try Search instead"
+          intro: "Can't Find What You're Looking For? <br /><br /> Try Search instead ! 🕵",
+          tooltipClass: "font-normal body-font focus:outline-none focus-within:outline-none"
         },
         {
           element: ".onBoard-6",
-          intro: "That's it, Hope you enjoy!"
+          intro: "That's it, <br /><br /> Hope you enjoy! 😍",
+          tooltipClass: "font-normal body-font focus:outline-none focus-within:outline-none"
         }
       ],  };
   }
@@ -43,6 +55,7 @@ export default class OnBoard extends Component {
       stepsEnabled,
       steps,
       initialStep,
+      options
     } = this.state;
 
     return (
@@ -51,6 +64,7 @@ export default class OnBoard extends Component {
           steps={steps}
           initialStep={initialStep}
           onExit={this.onExit}
+          options={options}
         />
     );
   }

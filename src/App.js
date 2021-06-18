@@ -34,7 +34,7 @@ function App() {
     <div className="bg-gray-100">
       <Header />
 
-      <main className="container sm:px-8 max-w-2xl mx-auto">
+      <main className="container px-2 sm:px-8 max-w-2xl mx-auto">
        {loading ? <Loading /> : 
         <>
           <OnBoard />

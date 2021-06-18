@@ -36,10 +36,9 @@ export default function Main({ countries }) {
     return (
 
         <section>
-            {/* https://tailwindtemplates.io/search/ */}
-            <div className="shadow flex onBoard-5">
-                <input inputMode="search" type="text" name="searchTerm" value={searchTerm} onChange={(e)=> setSearchTerm(e.target.value)} className="w-full rounded p-2 focus:outline-none" placeholder="Search..." />
-                    <button className="bg-white w-auto flex justify-end items-center text-blue-500 p-2 hover:text-blue-400">
+            <div className="shadow rounded flex onBoard-5">
+                <input inputMode="search" type="text" name="searchTerm" value={searchTerm} onChange={(e)=> setSearchTerm(e.target.value)} className="w-full rounded p-2 pl-4 focus:outline-none" placeholder="Search..." />
+                    <button className="rounded bg-white w-auto flex justify-end items-center text-brand p-2 hover:text-brand">
                         <MdSearch />
                     </button>
                 </div>

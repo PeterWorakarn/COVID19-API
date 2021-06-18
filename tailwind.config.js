@@ -5,13 +5,8 @@ module.exports = {
     extend: {
          colors: {
            brand: {
-             light: "hsl(222, 100%, 93%)",
-             DEFAULT: "hsl(215, 84%, 56%)",
-             dark: "hsl(215, 84%, 23%)"
+             DEFAULT: "#d35400"
            }
-         },
-         fontFamily: {
-           
          }
     }
   },

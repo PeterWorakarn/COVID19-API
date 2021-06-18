@@ -1,12 +1,11 @@
 import React from 'react';
 
 export default function Banner({global}) {
-    // tailwind block
     return (
-        <section className="text-gray-600 body-font onBoard-2">
+        <section className="text-gray-600 body-font bg-white rounded shadow-md onBoard-2">
         <div className="container mb-5 mx-auto flex flex-wrap">
-            <div className=" w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
-                <img className="object-cover object-center w-full h-full" src="https://dummyimage.com/600x300" alt="stats" />
+            <div className=" w-full rounded-t overflow-hidden sm:mt-0">
+                <img className="object-cover object-center w-full h-full" src="https://dummyimage.com/400x200" alt="stats" />
             </div>
             <div className="flex flex-wrap mx-auto mt-auto mb-auto  content-center ">
             <div className="w-full sm:p-4 p-4">

@@ -9,10 +9,10 @@ export default function ScrollTop() {
     
 
     return (
-        <button onClick={scrollTop} className="grid place-items-center w-12 h-12 bg-red-600 rounded-full hover:bg-red-700 active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none">
-            <IconContext.Provider value={{ className:"w-10 h-10 color-white" }}>
+        <button onClick={scrollTop} className="fixed bottom-2 right-1 bg-opacity-75 grid place-items-center w-8 h-8 bg-brand rounded-full hover:bg-brand active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none">
+            <IconContext.Provider value={{ className:"w-5 h-5 text-white" }}>
                 <MdExpandLess />
             </IconContext.Provider>
-      </button>
+        </button>
     )
 }
