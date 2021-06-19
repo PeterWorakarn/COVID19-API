@@ -37,7 +37,7 @@ function App() {
       <main className="container px-2 sm:px-8 max-w-2xl mx-auto">
        {loading ? <Loading /> : 
         <>
-          {/* <OnBoard /> */}
+          <OnBoard />
           <Banner global = {global}/>
           <Main countries = {countries}/>
         </>
